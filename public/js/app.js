@@ -3360,6 +3360,80 @@ function Dashboard(props) {
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Probando.jsx":
+/*!*****************************************!*\
+  !*** ./resources/js/Pages/Probando.jsx ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Components_Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Components/Button */ "./resources/js/Components/Button.js");
+/* harmony import */ var _Components_Input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Components/Input */ "./resources/js/Components/Input.js");
+/* harmony import */ var _Components_Label__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Label */ "./resources/js/Components/Label.js");
+/* harmony import */ var _Layouts_Guest__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Layouts/Guest */ "./resources/js/Layouts/Guest.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+var Probando = function Probando() {
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.useForm)({
+      title: '',
+      body: ''
+    }),
+    data = _useForm.data,
+    setData = _useForm.setData,
+    post = _useForm.post,
+    processing = _useForm.processing,
+    errors = _useForm.errors,
+    reset = _useForm.reset;
+  var submit = function submit(e) {
+    e.preventDefault();
+    post(route("Probando.store"), {
+      onSuccess: function onSuccess(e) {
+        console.log(e);
+        reset();
+      }
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_Layouts_Guest__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.Head, {
+      title: "Probando"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "mx-auto p-4 max-w-2xl",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("form", {
+        onSubmit: submit,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          value: "Titulo"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Input__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          name: "title",
+          value: data.title,
+          handleChange: function handleChange(e) {
+            return setData('title', e.target.value);
+          }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Button__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          className: "my-2",
+          processing: processing,
+          children: "Registrar"
+        })]
+      })
+    })]
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Probando);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Welcome.js":
 /*!***************************************!*\
   !*** ./resources/js/Pages/Welcome.js ***!
@@ -56915,6 +56989,8 @@ var map = {
 	"./Auth/VerifyEmail.js": "./resources/js/Pages/Auth/VerifyEmail.js",
 	"./Dashboard": "./resources/js/Pages/Dashboard.js",
 	"./Dashboard.js": "./resources/js/Pages/Dashboard.js",
+	"./Probando": "./resources/js/Pages/Probando.jsx",
+	"./Probando.jsx": "./resources/js/Pages/Probando.jsx",
 	"./Welcome": "./resources/js/Pages/Welcome.js",
 	"./Welcome.js": "./resources/js/Pages/Welcome.js"
 };
